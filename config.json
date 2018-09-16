@@ -1,0 +1,16 @@
+{
+  "name": "avrdude",
+  "version": "0.6",
+  "slug": "avrdude",
+  "description": "Flash Arduino from Hassio",
+  "startup": "once",
+  "boot": "manual",
+  "devices": ["/dev/ttyUSB0:/dev/ttyUSB0:rwm"],
+  "options": {
+    "cmd_line": "-v -patmega328p -carduino -P/dev/ttyUSB0 -b57600 -D -Uflash:w:/firmware.ino.hex:i"
+  },
+  "schema": {
+    "cmd_line": "str"
+  },
+  "ports": {}
+}
