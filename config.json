@@ -1,8 +1,9 @@
 {
   "name": "avrdude",
-  "version": "0.6",
+  "version": "0.7",
   "slug": "avrdude",
-  "description": "Flash Arduino from Hassio",
+  "description": "Flash arduino from Hassio",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "once",
   "boot": "manual",
   "devices": ["/dev/ttyUSB0:/dev/ttyUSB0:rwm"],
