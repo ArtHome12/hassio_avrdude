@@ -20,4 +20,4 @@ Therefore for docker on RPi command line will be `avrdude -v -patmega328p -cardu
 You can get the sketch file with menu `Sketch/Export compiled binary Ctrl+Alt+S` - will create 2 files, you need a smaller size, without bootloader.
 
 ## Transfer
-I decided not to give an example of moving a file to raspberries, since there are a lot of them.
+I decided not to give an example of moving a file to raspberries, since there are a lot of them. Simply transfer your '.hex' instead sample and start once the addon.
