@@ -10,6 +10,8 @@ The task can be divided into stages:
 * transfer compiled binary hex-file to Rpi
 * run the add-on and Arduino will start in seconds the updated program.
 
+Of cource, You have to read "Tutorial: Making your first add-on" from https://developers.home-assistant.io/docs/en/hassio_addon_tutorial.html
+
 ## Compilation
 There are several compilers, but the most common is probably the Arduino IDE. It is assumed that there is no problem with local sketch filling, when Arduino connected to "big PC". `Arduino IDE` also uses `avrdude` - lets go to menu "File/Preferences" and set check-box "Show verbose output during upload". 
 
