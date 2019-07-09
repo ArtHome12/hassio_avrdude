@@ -19,7 +19,7 @@ WORKDIR /data
 COPY run.sh /
 RUN chmod a+x /run.sh
 
-
+# For any preinstalled .hex
 COPY *.hex /
 
 CMD [ "/run.sh" ]
