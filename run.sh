@@ -1,13 +1,24 @@
-
+# Extract config options
 CONFIG_PATH=/data/options.json
+CMD_DOWNLOAD_LINE="$(jq --raw-output '.cmd_download_line' $CONFIG_PATH)"
+CMD_FLASH_LINE="$(jq --raw-output '.cmd_flash_line' $CONFIG_PATH)"
 
-CMD_LINE="$(jq --raw-output '.cmd_line' $CONFIG_PATH)"
 
-# For debug
-# echo ">ls -l /dev/tty*"
-# ls -l /dev/tty*
+# Download update
+echo "Downloading the update"
+eval $CMD_DOWNLOAD_LINE
+echo " "
+
+
+#echo ">ls -l /dev/tty*"
+#ls -l /dev/tty*
+
 # echo ">test -w /dev/ttyUSB0 || echo Error"
 # test -w /dev/ttyUSB0 || echo Error
 
-avrdude $CMD_LINE
+#echo ">ls /"
+#ls /
 
+avrdude $CMD_FLASH_LINE
+
+#echo Finished!
