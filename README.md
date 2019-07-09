@@ -7,7 +7,7 @@ It's an add-on for those who:
 
 The task can be divided into stages:
 * on "big PC" compile source code, for example using Arduino IDE
-* transfer compiled binary hex-file to Rpi
+* transfer compiled binary hex-file to RPi
 * install and run the add-on and Arduino will start in seconds the updated program.
 
 Of cource, You have to read "Tutorial: Making your first add-on" from https://developers.home-assistant.io/docs/en/hassio_addon_tutorial.html
