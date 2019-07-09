@@ -24,7 +24,7 @@ You can get the sketch file with menu `Sketch/Export compiled binary Ctrl+Alt+S`
 There is `fastblink.ino.hex`. It is standart `Blink` example with `delay(100)`.
 
 ## Transfer
-First of all, the add is trying to execute the file download command, by default:
+First of all, the addon is trying to execute the file download command, by default:
 `wget -O /firmware.ino.hex https://github.com/ArtHome12/hassio_avrdude/blob/master/fastblink.ino.hex` - download file from URL and save/rewrite it under a new name `/firmware.ino.hex`.
 
 Keep in mind the following:
@@ -100,3 +100,4 @@ avrdude: verifying ...
 avrdude: 926 bytes of flash verified
 avrdude done.  Thank you.
 ``````
+Now your Arduino executes a new code!
