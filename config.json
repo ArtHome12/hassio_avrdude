@@ -7,7 +7,7 @@
   "url": "https://community.home-assistant.io/t/avrdude-component-flash-arduino-from-hassio/125555",
   "startup": "once",
   "boot": "manual",
-  "devices": ["/dev/ttyUSB0:/dev/ttyUSB0:rwm"],
+  "uart": "True",
   "options": {
     "cmd_download_line": "wget -O /firmware.ino.hex https://github.com/ArtHome12/hassio_avrdude/releases/download/1/fastblink.ino.hex",
     "cmd_flash_line": "-v -patmega328p -carduino -P/dev/ttyUSB0 -b57600 -D -Uflash:w:/firmware.ino.hex:i"
