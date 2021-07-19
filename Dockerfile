@@ -12,14 +12,11 @@ RUN apk add --no-cache jq
 # Install AVRDude
 RUN apk --no-cache add bash avrdude
 
-
-WORKDIR /data
+# For any preinstalled .hex
+COPY *.hex /
 
 # Copy data for add-on
 COPY run.sh /
 RUN chmod a+x /run.sh
-
-# For any preinstalled .hex
-COPY *.hex /
 
 CMD [ "/run.sh" ]
