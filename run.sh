@@ -1,3 +1,5 @@
+#!/usr/bin/with-contenv bashio
+
 # Extract config options
 CONFIG_PATH=/data/options.json
 CMD_DOWNLOAD_LINE="$(jq --raw-output '.cmd_download_line' $CONFIG_PATH)"
